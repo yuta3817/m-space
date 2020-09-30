@@ -1,0 +1,14 @@
+.Main
+  .MainHeader
+    .MainHeader__title
+      .MainHeader__title-name
+      %ul.MainHeader__member-list
+        %li.MainHeader__member
+          Member :
+      編集
+  .MessageField
+  .Footer
+    .Form
+      = f.text_area :content, class: 'Form__content', placeholder: 'コメントを入力'
+      = f.submit '投稿', class: 'Form__submit'
+
